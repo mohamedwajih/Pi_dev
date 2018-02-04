@@ -1,0 +1,26 @@
+===Base de données mysoulmate
+
+== Structure de la table event
+
+|------
+|Colonne|Type|Null|Défaut
+|------
+|//**id_event**//|int(11)|Non|
+|titre_event|varchar(50)|Non|
+|type_event|varchar(50)|Non|
+|texte_event|varchar(250)|Non|
+|date_event|datetime|Non|
+|lieu_event|varchar(50)|Non|
+== Contenu de la table event
+
+== Structure de la table notification
+
+|------
+|Colonne|Type|Null|Défaut
+|------
+|//**id_notification**//|int(11)|Non|
+|type_notification|varchar(50)|Non|
+|texte_notification|varchar(50)|Non|
+|date_notification|datetime|Non|
+== Contenu de la table notification
+
