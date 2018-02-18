@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFCCCC; -fx-border-color: #99000D; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.MatchAdminController">
+   <children>
+      <TextField fx:id="texterecherche" layoutX="15.0" layoutY="456.0" onKeyPressed="#rechercheMatchs" prefHeight="33.0" prefWidth="683.0" promptText="Rechercher" style="-fx-background-color: #FFE5CC;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <Label fx:id="labelmatch" layoutX="197.0" layoutY="-30.0" prefHeight="139.0" prefWidth="342.0" text="Liste des matchs" textFill="#ff6969" wrapText="true">
+         <font>
+            <Font name="Jellyka - Love and Passion" size="51.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Label fx:id="nbmatchs" layoutX="280.0" layoutY="98.0" prefHeight="26.0" prefWidth="161.0" text="NB matchs" wrapText="true">
+         <font>
+            <Font name="LemonMilk" size="18.0" />
+         </font>
+      </Label>
+      <Pane fx:id="pane" layoutX="10.0" layoutY="498.0" prefHeight="221.0" prefWidth="690.0">
+         <children>
+            <ImageView fx:id="imagecoeur3" fitHeight="41.0" fitWidth="44.0" layoutX="29.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@coeur.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imagecoeur4" fitHeight="41.0" fitWidth="44.0" layoutX="624.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@coeur.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fx:id="imagecoeur1" fitHeight="96.0" fitWidth="115.0" layoutX="55.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@coeur.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imagecoeur2" fitHeight="96.0" fitWidth="132.0" layoutX="522.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@coeur.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelselection" layoutX="42.0" layoutY="590.0" prefHeight="75.0" prefWidth="639.0" text="Sélectionnez une question pour plus de détails" visible="false">
+         <font>
+            <Font name="LemonMilk" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tvmatchs" fixedCellSize="100.0" layoutX="11.0" layoutY="131.0" onInputMethodTextChanged="#rechercheMatchs" prefHeight="309.0" prefWidth="690.0">
+         <columns>
+            <TableColumn fx:id="user1" prefWidth="215.0" style="-fx-background-color: #FFEFD5;" text="User 1" />
+            <TableColumn fx:id="user2" prefWidth="236.0" style="-fx-background-color: #FFEFD5;" text="User 2" />
+            <TableColumn fx:id="pourcentage" prefWidth="238.0" style="-fx-background-color: #FFEFD5;" text="Pourcentage" />
+         </columns>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TableView>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

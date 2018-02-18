@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="372.0" prefWidth="687.0" style="-fx-background-color: #FFCCCC; -fx-border-color: #99000D; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.MesMatchsController">
+   <children>
+      <Label fx:id="labelmatch" layoutX="104.0" layoutY="-26.0" prefHeight="139.0" prefWidth="271.0" text="Mes Matchs" textFill="#ff6969" wrapText="true">
+         <font>
+            <Font name="Jellyka - Love and Passion" size="52.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Label fx:id="nbmatchs" layoutX="79.0" layoutY="91.0" prefHeight="91.0" prefWidth="400.0" text="NB matchs" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="LemonMilk" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imagecoeur2" fitHeight="247.0" fitWidth="200.0" layoutX="481.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@coeur.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Label fx:id="labelselection" layoutX="42.0" layoutY="590.0" prefHeight="75.0" prefWidth="639.0" text="Sélectionnez une question pour plus de détails" visible="false">
+         <font>
+            <Font name="LemonMilk" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="nom" layoutX="35.0" layoutY="434.0" prefHeight="41.0" prefWidth="292.0" text="Nom" textFill="#99000d">
+         <font>
+            <Font name="LemonMilk" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="prenom" layoutX="35.0" layoutY="507.0" prefHeight="41.0" prefWidth="292.0" text="Prenom" textFill="#99000d">
+         <font>
+            <Font name="LemonMilk" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="age" layoutX="375.0" layoutY="434.0" prefHeight="41.0" prefWidth="292.0" text="Age" textFill="#99000d">
+         <font>
+            <Font name="LemonMilk" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="adresse" layoutX="375.0" layoutY="507.0" prefHeight="41.0" prefWidth="298.0" text="Adresse" textFill="#99000d">
+         <font>
+            <Font name="LemonMilk" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="pourcent" layoutX="536.0" layoutY="65.0" prefHeight="75.0" prefWidth="103.0" text="100 %" textFill="WHITE">
+         <font>
+            <Font name="LemonMilk" size="38.0" />
+         </font>
+      </Label>
+      <Button layoutX="89.0" layoutY="591.0" mnemonicParsing="false" onAction="#Like" prefHeight="41.0" prefWidth="145.0" style="-fx-background-color: red;" text="Like" textFill="#ebbaba" wrapText="true">
+         <font>
+            <Font name="LemonMilk" size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="440.0" layoutY="591.0" mnemonicParsing="false" onAction="#Dislike" prefHeight="41.0" prefWidth="145.0" style="-fx-background-color: red;" text="Dislike" textFill="#ebbaba" wrapText="true">
+         <font>
+            <Font name="LemonMilk" size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <ImageView fx:id="photo" fitHeight="230.0" fitWidth="292.0" layoutX="198.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="91.0" fitWidth="96.0" layoutX="50.0" layoutY="249.0" onMouseClicked="#Previous" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@gauche.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="91.0" fitWidth="96.0" layoutX="537.0" layoutY="251.0" onMouseClicked="#Next" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@droite.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>
